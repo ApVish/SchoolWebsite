@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <style> #getdata{
+ border-radius: 6px;
+ height: auto; width: 450px;
+ margin:auto; }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+<div class="navbar-header">
+      <a class="navbar-brand" href="homepage">Studentor</a>
+    </div>
+  </div>
+</nav>
+<div class="page-header">
+  <h1>School Name</h1>
+</div>
+
+<div id=getdata>
+<form method="POST" action="/adminlogin" >
+  
+      
+        <div class="form-group" >
+          <input class="form-control" id="uname" name="uname" placeholder="Username" type="text"  required>
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="pwd" name="pwd" placeholder="Password" type="password"  required>
+        </div>
+
+        <center>  <input type="Submit" value="Login"></center>
+        
+     
+</form>
+</div>
+</body>
+</html>

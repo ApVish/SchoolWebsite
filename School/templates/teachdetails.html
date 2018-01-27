@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <style> #getdata{
+ border-radius: 6px;
+ height: auto; width: 450px;
+ margin:auto; }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+<div class="navbar-header">
+      <a class="navbar-brand" href="homepage">Studentor</a>
+    </div>
+<ul class="nav navbar-nav navbar-right">
+      <li><a href="homepage">Log out</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="page-header">
+  <h1>School Name</h1>
+</div>
+
+
+
+
+<div id=getdata>
+<center><h3>Teacher details</h3></center>
+<form method="post" class="form-horizontal" action="/teacherdetails">
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control"  name="email" id="email" placeholder="Enter email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2">Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="fname" placeholder="Enter full name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <div class="col-sm-10"> 
+      <input type="password" class="form-control" name="pwd" id="pwd" placeholder="Enter password">
+    </div>
+  </div>
+
+        <center>  <input type="Submit" value="Submit"></center>
+        
+     
+</form>
+</div>
+</body>
+</html>
